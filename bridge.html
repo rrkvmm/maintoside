@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bridge Configuration</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="./img/lyo-token-lg.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ 
+</head>
+
+<style>
+  .bank-sec{
+  padding: 100px 0;
+  background: url(/img/bg-right.png) top right;
+  background-repeat: no-repeat;
+  
+}
+
+.content{
+  min-height: 80vh;
+  padding: 80px 0;
+}
+
+.main-nav{
+  justify-content: flex-start;
+}
+
+.form-container{
+  background: #f7f7f7;
+    padding: 30px 50px;
+    border-radius: 15px;
+    border: none;
+}
+
+.content h5{
+  font-weight: bold;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.btn-row {
+  
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.btn{
+  width: 10%;
+
+}
+
+.navbar .container-fluid{
+  justify-content: flex-start;
+}
+
+.navbar h4{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+</style>
+
+<body>
+
+  <!-- Page Wrap -->
+  <div className="page" id="top">
+    <!-- Navigation panel -->
+    <nav class="main-nav navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a aria-current="page" class="navbar-brand active" href="/"><span class="navbar-brand"><img
+              src=(lyo-token-lg.png><strong> LYO</strong>BRIDGE</span></a>
+        <h4>Bridge Configuration</h4>
+      </div>
+    </nav>
+    <!-- End Navigation panel -->
+
+
+  </div>
+  <!-- End Page Wrap -->
+
+  <section class="content">
+    <div class="container">
+      <form>
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <div class="form-container">
+
+              <h5>Main Chain</h5>
+              <div class="form-group">
+                <label for="mainChainName">Block Chain</label>
+                <input type="text" class="form-control" id="mainChainName" aria-describedby="mainChainName"
+                  placeholder="Enter chain name" required>
+              </div>
+              <div class="form-group">
+                <label for="mainchainId">Chain ID</label>
+                <input type="number" class="form-control" id="mainchainId" placeholder="Chain id in number" required>
+              </div>             
+              <div class="form-group">
+                <label for="tokenContractAddress">Token Contract Address</label>
+                <input type="text" class="form-control" id="tokenContractAddress" placeholder="Token address" required>
+              </div>
+              <div class="form-group">
+                <label for="bridgeaddress">Bridge Contract Address</label>
+                <input type="text" class="form-control" id="bridgeAddress" aria-describedby="bridgeAddress"
+                  placeholder="Deployed side bridge " required>
+                <small id="requirement" class="form-text text-muted">Gateway and token is to be linked with smart contract</small>
+              </div>
+              <div class="form-group">
+                <label for="mainnodeprovider">NodeProvider</label>
+                <input type="Main node Provider" class="form-control" id="mainNodeProvider" placeholder="Provider url" required>
+              </div>
+              <div class="form-group">
+                <label for="mainnodeprovider">Gas price Api</label>
+                <input type="Main node Provider" class="form-control" id="gasPriceApi" placeholder="Gas price api url" required>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-container">
+              <h5>Side Chain</h5>
+              <div class="form-group">
+                <label for="mainchainname">Block Chain</label>
+                <input type="text" class="form-control" id="mainchainname" aria-describedby="emailHelp"
+                  placeholder="Enter chain name" required>
+              </div>
+              <div class="form-group">
+                <label for="sidechainid">Chain ID</label>
+                <input type="number" class="form-control" id="sidechainid" placeholder="number" required>
+              </div>             
+              <div class="form-group">
+                <label for="tokencontractaddress">Token Contract Address</label>
+                <input type="Token" class="form-control" id="exampleInputPassword1" placeholder="address" required>
+              </div>
+              <div class="form-group">
+                <label for="bridgeaddress">Bridge Contract Address</label>
+                <input type="text" class="form-control" id="bridgeaddress" aria-describedby="emailHelp"
+                  placeholder="Deployed main bridge " required>
+                <small id="emailHelp" class="form-text text-muted">Gateway address need to be registered inside smart contract</small>
+              </div>
+              <div class="form-group">
+                <label for="mainnodeprovider">NodeProvider</label>
+                <input type="Main node Provider" class="form-control" id="mainnodeprovider" placeholder="Provider url" required>
+              </div>
+              <div class="form-group">
+                <label for="mainnodeprovider">Gas price Api</label>
+                <input type="Main node Provider" class="form-control" id="mainnodeprovider" placeholder="Gas price api url" required>
+              </div>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-container">
+              <label for="exampleInputEmail1">Bridge Server </label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Bridge Server url">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 btn-row">
+          <button type="submit" class="btn btn-primary" onclick=submitConfigurationDetails();>Submit</button>
+          <button type="submit" class="btn btn-success">Save</button>
+        </div>
+        
+      </form>
+    
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/maintoside/index.js" ></script>
+  <script>
+  
+  const configData={"mainChain":{"chainName":"","chainId":"","tokenContractAddress":"","bridgeContractAddress":"","nodeProvider":"","gasPriceApi":""},
+                    "sideChain":{"chainName":"","chainId":"","tokenContractAddress":"","bridgeContractAddress":"","nodeProvider":"","gasPriceApi":""},
+                    "serverUrl":""}
+  const express = require("express");
+  const app = express();
+  var initialisation = require('./app');
+  function submitConfigurationDetails(){
+      console.log("inside index function")
+      configData.mainchain.chainName = document.getElementById("mainchainname").value;
+      //configData.mainchain = getele
+      console.log("configdata",configData)
+      initialisation.initialisation();
+  }
+
+  app.listen(3000, () => {
+    console.log("Application started and Listening on port 3000");
+  });
+  
+  app.get("/", (req, res) => {
+    
+    //res.send(__dirname);
+      res.sendFile(__dirname + "/bridge.html");
+      console.log("dir name",__dirname);
+      
+  });
+  
+
+  </script>
+
+
+
+</body>
+
+</html>
+
+
+<!-- 152.0997
+20.4753 -->
